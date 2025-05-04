@@ -1,0 +1,106 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+
+.skill{
+    border: 2px solid red;
+    width: 500px;
+    color: white;
+    padding: 25px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.45), 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.skill li{
+    margin: 20px 0px;
+    list-style: none;
+    padding: 10px;
+}
+
+.bar{
+    border: 1px solid blue;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.35), 0 10px 10px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.25);
+
+}
+
+.bar span{
+    height: 20px;
+    border: 2px solid green;
+    float: left;
+    /* background-color: aqua; */
+    background: linear-gradient(135deg, orange,pink);
+    /* width: 0%; */
+}
+.html{
+    width: 80%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+
+}
+.js{
+    width: 60%;
+    animation: js 3s;
+
+}
+.php{
+    width: 40%;
+    animation: php 3s;
+
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+   
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+   
+    100%{
+        width: 70%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+   
+    100%{
+        width: 60%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0;
+    }
+   
+    100%{
+        width: 40%;
+    }
+}

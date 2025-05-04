@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: url('./laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    background-color: white;
+    border: 2px solid red;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+
+nav li{
+    height: 100%;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+nav a:hover{
+    background-color: rgb(198, 194, 194);
+    /* height: 100%; */
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    border: 2px solid green;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(12px);
+}
+
+.menuBtn{
+    display: none;
+}
+
+@media(max-width:600px){
+    .menuBtn{
+        display: block;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+
+}

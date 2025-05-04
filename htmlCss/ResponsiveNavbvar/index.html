@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li><a href="">Blog</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Form</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+
+      <ul >
+        <li class="hideOnMobile"><a href="#">Coding2Go</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Product</a></li>
+        <li class="hideOnMobile"><a href="#">Service</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="menuBtn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+
+      </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+
+        }
+    </script>
+  </body>
+</html>
